@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Projeto_Integrador.Pages.Sentindo"
+             Title="Sentindo"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout Margin="16" Padding="16" BackgroundColor="DeepSkyBlue">
+
+        <!-- Texto no topo, centralizado -->
+        <Label Text="Qual seu sentimento hoje?"
+               FontSize="40"
+               FontAttributes="Bold"
+               TextTransform="Uppercase"
+            Margin="20,50,0,200"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"/>
+
+        <!-- Alinhamento das imagens na horizontal -->
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <ImageButton Source="iconefeliz.png"
+                         Scale="3.3"
+                     WidthRequest="0"
+                     HeightRequest="40"
+                     Margin="10, 0, 100, 0"
+                         Clicked="ImgBtnFeliz"/>
+
+            <ImageButton Source="iconemedio.png"
+                         Scale="3.6"
+                     WidthRequest="50"
+                     HeightRequest="50"
+                     Margin="60, 0, 100, 0"
+                         Clicked="ImgButtonMedio_Clicked"/>
+
+            <ImageButton Source="iconetriste.png"
+                         Scale="3.3"
+                     WidthRequest="50"
+                     HeightRequest="50"
+                     Margin="60, 0, 0, 0"
+                         Clicked="ImgBtnTriste"/>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

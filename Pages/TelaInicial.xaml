@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Projeto_Integrador.Pages.TelaInicial"
+             
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout 
+                 Margin="16"
+                 Padding="16"
+                 BackgroundColor="SkyBlue">
+
+
+        <Label Margin="10"
+               Text="👤   Olá, Raphael!"
+               TextColor="Black"
+               FontSize="32"
+               FontAttributes="Bold"
+                WidthRequest="300"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                />
+
+
+        <Button Margin="27"
+                Text="🤔 O que está sentindo hoje?"
+                FontAttributes="Bold"
+                Background="DeepSkyBlue"
+                WidthRequest="300"
+                HorizontalOptions="Center"
+                Clicked="BtnSentindo"/>
+
+        <Button Margin="27"
+                Text="📖  Acessar diário"
+                FontAttributes="Bold"
+                BackgroundColor="DeepSkyBlue"
+                WidthRequest="300"
+                HorizontalOptions="Center"
+                Clicked="BtnRegistros"/>
+
+        <Button Margin="23"
+                Text="✍️  Escrever no diário"
+                FontAttributes="Bold"
+                WidthRequest="300"
+                BackgroundColor="DeepSkyBlue"
+                Clicked="BtnEscrever"
+                />
+
+        <Button Margin="23"
+                Text="🔙  Sair"
+                FontAttributes="Bold"
+                WidthRequest="230"
+                BackgroundColor="DeepSkyBlue"
+                Clicked="BtnSair_Clicked"/>
+
+
+        </StackLayout>
+    </ContentPage>
